@@ -1,5 +1,10 @@
 *{
     font-family: sans, "Google Sans";
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
 }
 .main_container{
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
@@ -35,6 +40,8 @@
 .data_polaris__hero p{
     color: #7993ac;
     font-size: 20px;
+    width: 80% !important;
+    margin: auto;
 }
 
 .data_polaris__hero h3{
@@ -50,6 +57,7 @@
     border-radius: 2px;
     padding: 10px 20px;
     font-size: 18px;
+    margin-top: 30px;
 }
 
 .data_polaris__hero button:hover{
@@ -72,6 +80,93 @@
     padding-bottom: 100px;
     background-color: #99b6d220;
 }
+
+.contact_section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.contact_section span{
+    color: red;
+}
+.contact_section label{
+    font-size: 18px;
+}
+
+.contact_section input, .contact_section textarea{
+    background-color: #99b6d220;
+    border: 2px solid #99b6d250;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.contact_section .contact_btn{
+    background: linear-gradient(#435161, #1b2735) !important;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+
+.contact_section .fa{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    color: #1b2735;
+    background-color: #99b6d230;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+}
+
+.footer_container{
+    background-color: #1b2735;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer_container p{
+    color: #7993ac;
+}
+
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+.portfolio-menu .btn{
+    background-color: #99b6d230 !important;
+    border: none;
+    color: #435161;
+}
+
+.portfolio-menu .active{
+    background-color: #99b6d2 !important;
+    border: none;
+    color: #435161;
+}
+
 #stars {
     width: 1px;
     height: 1px;
