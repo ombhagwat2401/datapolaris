@@ -9,7 +9,9 @@ body{
 .main_container{
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 .navbar{
     padding: 20px !important;
@@ -69,6 +71,12 @@ body{
     padding-bottom: 100px;
     
 }
+
+.special_thanks{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #99b6d220;
+}
 .heading{
     background: -webkit-linear-gradient(#435161, #090a0f);
     -webkit-background-clip: text;
@@ -78,7 +86,7 @@ body{
 .team_section{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #99b6d220;
+    /* background-color: #99b6d220; */
 }
 
 .contact_section{
@@ -109,7 +117,7 @@ body{
     border: none;
 }
 
-.contact_section .fa{
+.contact_section .social_icon{
     font-size: 30px;
     width: 60px;
     height: 60px;
@@ -166,6 +174,26 @@ body{
     border: none;
     color: #435161;
 }
+
+.media{
+    display: none !important;
+}
+
+.media2{
+    display: flex !important;
+}
+
+@media (max-width: 990px) {
+    .media{
+        display: flex !important;
+    }
+
+    .media2{
+        display: none !important;
+    }
+}
+
+
 
 #stars {
     width: 1px;
