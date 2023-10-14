@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
 *{
-    font-family: sans, "Google Sans";
+    font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
 }
 
 body{
     scroll-behavior: smooth;
+    
 }
 .main_container{
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
@@ -72,10 +74,44 @@ body{
     
 }
 
+.about_section button{
+    background: transparent;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+
+.about_section button:hover{
+    color: #fff;
+    background-color: #00ccff;
+    border: 2px solid #00ccff; 
+    color: #1b2735;
+}
+.strip{
+    display: flex;
+    width: 280px;
+    margin: auto;
+}
+.strip_orange{
+    width: 50%;
+    background-color: orange;
+    padding: 2px;
+}
+
+.strip_blue{
+    width: 50%;
+    background-color: #00ccff;
+    padding: 2px;
+}
+
 .special_thanks{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #99b6d220;
+    background-color: #99b6d230;
 }
 .heading{
     background: -webkit-linear-gradient(#435161, #090a0f);
@@ -109,23 +145,56 @@ body{
     padding: 20px;
 }
 
-.contact_section .contact_btn{
+/* .contact_section .contact_btn{
     background: linear-gradient(#435161, #1b2735) !important;
     padding: 10px 20px;
     color: #fff;
     font-size: 18px;
     border: none;
-}
+} */
 
 .contact_section .social_icon{
     font-size: 30px;
     width: 60px;
     height: 60px;
-    color: #1b2735;
-    background-color: #99b6d230;
+    color: orange;
+    border: 2px solid orange;
     text-align: center;
     padding-top: 15px;
     border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.contact_section .social_icon:hover{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    border: 2px solid #00ccff;
+    background-color: #00ccff;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+}
+
+
+.contact_section button{
+    background: transparent;
+    color: #fff;
+    border: 2px solid orange;
+    color: orange;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+}
+
+.contact_section button:hover{
+    color: #fff;
+    background-color: #00ccff;
+    border: 2px solid #00ccff; 
+    color: #1b2735;
 }
 
 .footer_container{
@@ -164,16 +233,21 @@ body{
 }
 
 .portfolio-menu .btn{
-    background-color: #99b6d230 !important;
+    
     border: none;
-    color: #435161;
+    color: orange;
+    border: 2px solid orange;
+    transition: all 0.5s ease;
 }
 
-.portfolio-menu .active{
-    background-color: #99b6d2 !important;
-    border: none;
-    color: #435161;
+.portfolio-menu .active, .portfolio-menu .btn:hover{
+    background-color: #00ccff !important;
+    color: #fff;
+    border: 2px solid #00ccff !important;
+    
 }
+
+
 
 .media{
     display: none !important;
@@ -182,6 +256,63 @@ body{
 .media2{
     display: flex !important;
 }
+
+.events_section{
+    background-color: #99b6d220 !important;
+}
+.events_section .card{
+    margin-top: 50px;
+}
+
+.events_section .col-lg-12{
+    margin-top: 50px;
+}
+@media screen and (max-width: 1199px) {
+    .event-date {
+        padding: 10px 18px 6px 18px
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .event-date {
+        padding: 8px 15px 4px 15px
+    }
+    .events-date {
+        padding: 10px 15px 6px 15px
+    }
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.margin-40px-bottom {
+    margin-bottom: 40px;
+}
+.padding-60px-lr {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.margin-15px-bottom {
+    margin-bottom: 15px;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.font-size22 {
+    font-size: 22px;
+}
+.text-theme-color {
+    color: #192f59;
+}
+.margin-10px-bottom {
+    margin-bottom: 10px;
+}
+.margin-10px-right {
+    margin-right: 10px;
+}
+
 
 @media (max-width: 990px) {
     .media{
