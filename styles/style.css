@@ -232,6 +232,9 @@ body{
 	margin-bottom:10px;
 }
 
+.portfolio-menu img{
+    border-radius: 10px !important;
+}
 .portfolio-menu .btn{
     
     border: none;
